@@ -1,113 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ivan rezume</title>
-    <link href="styles.css" 
-    rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ivan, resume, cv">
+    <meta name="description" content="Это сайт - резюме Власенко Ивана">
+    <title>Ivan-Resume</title>
 
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
-
-        <div class="info">
-            <img src="avatarka.jpg" alt="Тут моя фотка с гитарой =)"
-                class="avatarka" />
-            
-            <div class="info-text">    
-                <h1>Иван Власенко</h1>
-                <p>Я работаю инженером, <strong> но хочу развиваться в сфере IT;</strong></p>
-                <p>Я люблю заниматься спортом, смотреть сериальчики и играть на гитаре (чего давно не делал).</p>
-
-                <h4>Мои социальные сети:</h4>
+         <div class="info">
+                <img src="https://sun9-north.userapi.com/sun9-80/s/v1/if1/VRND9uc9dWt81PzFDdz_FVjxt5mpM4VQMmKEYfYtz8GHRxWwG-LZ8ezyOrZn2f4oYgVM43xM.jpg?size=372x439&quality=96&type=album" alt="Власенко Иван" class="avatar">
+            <div class="info-text">
+                <h1>Власенко Иван Егорович</h1>
                 
-                <a href="https://vk.com/id63529353" target="_blank">Вконтакте</a>
+                <p>Я инженер, который <strong>решил <span>поднять жопу</span> изменить</strong> направление своей деятельности.</p>
+                <p>Хочу <strong><em>начать карьеру в IT.</em></strong> В <em>свободное время</em> занимаюсь спортом, играю на гитаре.</p>
+                
+                <h4>Список социальных сетей:</h4>
+
+                <a href="http://vk.com/id63529353" target="_blank">Мой Вконтакте</a>
                 |
-                <a href="perecvlasenko@gmail.com" target="_blank">Почта</a>
+                <a href="https://t.me/Ivan_wake_up" target="_blank">Мой Telegram</a>
             </div>
         </div>
-
-        <div class="card bg-green">
-            <h2>Мои хобби:</h2>
-            <ol class="list">
-                <li>Занятие спортом</li>
-                <li>Слушать музыку</li>
-                <li>Игра на гитаре</li>
-                <li>Читать РЭП (давно не делал)</li>
-            </ol>
-        </div> 
-
-        <div class="card bg-yellow">
-            <h2>Опыт работы</h2>
-            <table class="table">
-                    <tr>
-                        <td>КБСОШ</td>
-                        <td>Ученик</td>
-                        <td>2001-2012</td>
-                    </tr>
-                <tbody>
-                    <tr>
-                        <td>Студент ЮФУ</td>
-                        <td>Бакалавр/Магистр</td>
-                        <td>2012-2016-2018</td>
-                    </tr>
-                    <tr>
-                        <td>Инженер-схемотехник</td>
-                        <td>ООО "НПО ПКРВ"</td>
-                        <td>2018 - настоящее время</td>
-                    </tr>
-                
-                </tbody>
-            </table>
-        </div>
-
-        <div class="card bg-red">
-            <h2>Мои видео на Youtube</h2>
-            <ul class="link-list">
-                <li>
-                    <a href="https://www.youtube.com/watch?v=Tj_zkkmobJI" target="_blank">Сердце пацана</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=AyeMiiGW6mc" target="_blank"> Баcсейн - кавер</a>
-                </li>
+        <div class="card-hobby">
+            <h2>Мои хобби</h2>
+            <ul>
+                <li>Спорт</li>
+                <li>Гитара</li>
+                <li>Музыка</li>
+                <li>IT</li>
+                <li>Кухня</li>
             </ul>
         </div>
 
-        <div class="contact">
-            <h2>Связаться со мной</h2>
+        <div class="card-work">
+            <h2>Опыт работы</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Школа</td>
+                        <td>Ученик</td>
+                        <td>2001-2012</td>
+                    </tr>
+                        <td>ЮФУ</td>
+                        <td>Студент</td>
+                        <td>2012-2018</td>
+                    </tr>
+                        <td>ООО "НПО ПКРВ"</td>
+                        <td>Инженер-схемотехник</td>
+                        <td>2018-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-mycodeworks">
+            <ul>
+                <li> <a href="https://perecmc.github.io/cv---first-html/">Моя первая стрница HTML</a></li>
+                <li> <a href="https://perecmc.github.io/css-cv/">Моё первое веб-резюме</a></li>
+            </ul>
+        </div>
 
-            <form action="/"> 
-            <div class="row">
+        <form action="#" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
                 <div class="form-group">
                     <label for="name">Ваше имя:</label>
-                    <input type="text" id="name"
-                    placeholder="Введите имя..."> 
+                    <input type="text" id="name" placeholder="Введите имя">
                 </div>
-
                 <div class="form-group">
-                    <label for="email">Ваша почта:</label>
-                    <input type="email" id="email"
-                    placeholder="Введите почту...">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
                 </div>
             </div>
             <div class="form-group">
-
-                <label for="text">Ваше сообщение:</label>
-                <textarea id="text" cols="25" rows="3"></textarea>
-                    
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
             </div>
 
-            <input class="btn" type="submit" value="Связаться со мной">
-
-            </form>
-        </div>
-
-        <div class="position">
-            <div class="box"></div>
-        </div>
-
-    </div>   
-
-   
+            <input class="btn" type="submit" value="Отправить!">
+        </form>
+    </div>
 </body>
 </html>
